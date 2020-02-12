@@ -1,1 +1,1 @@
-# myboard
+# Kang Han Gyul : private board
