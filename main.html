@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>한결이네 블로그</title>
+</head>
+<style>
+    td {
+        cursor: pointer;
+        text-align: center;
+    }
+
+    td>span {
+        margin-left: 70px;
+    }
+
+    td:nth-child(2) {
+        text-align: left;
+    }
+
+    tr>th:nth-child(1) {
+        width: 100px;
+    }
+
+    tr>th {
+        text-align: center;
+    }
+
+    a {
+        text-decoration: none;
+        color: #000;
+    }
+
+    a:link {
+        text-decoration: none;
+        color: #000;
+    }
+
+    a:visited {
+        text-decoration: none;
+        color: #000;
+    }
+
+    ul>li {
+        text-align: center;
+    }
+
+    ul>li:hover {
+        font-weight: bold;
+        border: none;
+    }
+
+    #concert_media {
+        border: 4px solid #000;
+        border-radius: 10px;
+        display: block;
+        margin: 0 auto;
+    }
+
+</style>
+
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="main.html"><b>한결이네 블로그</b></a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="main.html">Home</a></li>
+            </ul>
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="profile.html">Profile</a></li>
+            </ul>
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="about_me.html">About me</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <h3 style="text-align: center;">- 피아노 치는 개발자 -</h3>
+    <iframe id="concert_media" width="660" height="415"
+        src="https://www.youtube.com/embed/jvxZastZ-N0" 
+        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+    </iframe>
+   
+
+    <br>
+    <hr width="1200px" style="margin: 0 auto; border-bottom: 3px double #000;">
+    <br>
+    <div class="container">
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>번호</th>
+                    <th>프로젝트 명</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td><span></span><a href="project_java.html"><b>자바 개인 프로젝트</b> : 사람관리시스템</a></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td><span></span><a href="project_model1.html"><b>MVC model-1 프로젝트</b> : 국산 중고차 매매 사이트</a></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td><span></span><a href="project_spring.html"><b>Spring legacy 프로젝트</b> : 강남 외식업 상권분석 사이트</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+
+</html>
