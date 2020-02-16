@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        text-decoration: none;
+        box-sizing: border-box;
+        font-family: 'KBIZHanmaumGothic'; 
+    }
+
+    @font-face {
+        font-family: 'KBIZHanmaumGothic'; 
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/KBIZHanmaumGothic.woff')format('woff'); 
+        font-weight: normal; 
+        font-style: normal; 
+    }
+
+    .table {
+        margin: 0 auto;
+        margin-top: 40px;
+        border-spacing: 0;
+    }
+
+    td {
+        cursor: pointer;
+        text-align: center;
+        height: 40px;
+        border-bottom: 1px solid black;
+    }
+
+    td>span {
+        margin-left: 70px;
+    }
+
+    td:nth-child(2) {
+        text-align: left;
+        width: 600px;
+    }
+
+    tr>th:nth-child(1) {
+        width: 100px;
+    }
+
+    tr>th {
+        text-align: center;
+        background-color: lightgray;
+        height: 50px;
+    }
+
+    a {
+        text-decoration: none;
+        color: #000;
+    }
+
+    a:link {
+        text-decoration: none;
+        color: #000;
+    }
+
+    a:visited {
+        text-decoration: none;
+        color: #000;
+    }
+
+    ul>li {
+        text-align: center;
+    }
+
+    ul>li:hover {
+        font-weight: bold;
+        border: none;
+    }
+
+    .td1:hover {
+        background-color: #eee;
+    }
+    .td2:hover {
+        background-color: #eee;
+    }
+    .td3:hover {
+        background-color: #eee;
+    }
+</style>
+
+</head>
+<body>
+
+    <div class="container">
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>번호</th>
+                    <th>프로젝트 명</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="td1" onclick="location.href='project_java.html'">
+                    <td>1</td>
+                    <td><span></span><b>자바 개인 프로젝트</b> : 사람관리시스템</td>
+                </tr>
+                <tr class="td2" onclick="location.href='project_model1.html'">
+                    <td>2</td>
+                    <td><span></span><b>MVC model-1 프로젝트</b> : 국산 중고차 매매 사이트</td>
+                </tr>
+                <tr class="td3" onclick="location.href='project_spring.html'">
+                    <td>3</td>
+                    <td><span></span><b>Spring legacy 프로젝트</b> : 강남 외식업 상권분석 사이트</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

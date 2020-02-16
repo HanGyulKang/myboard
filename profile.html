@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/6288715a88.js" crossorigin="anonymous"></script>
+    <title>Profile</title>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        text-decoration: none;
+        box-sizing: border-box;
+        font-family: 'KBIZHanmaumGothic'; 
+    }
+
+    @font-face {
+        font-family: 'KBIZHanmaumGothic'; 
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/KBIZHanmaumGothic.woff')format('woff'); 
+        font-weight: normal; 
+        font-style: normal; 
+    }
+    a {
+        color: #fff;
+    }
+    a:visited {
+        color: #fff;
+    }
+    a:link {
+        color: #fff;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        /* 
+        이렇게 이미지를 CSS에서 불러올 수 있음
+        no-repeat로 바탕화면 이미지가 반복되지 않게 설정 
+        */
+        background: url(images/profile_img/bgImg.jpg) no-repeat; 
+        /* background-size: cover;  얘는 아직 보류 */
+    }
+
+    /* home 버튼 */
+    #homebtn {
+        position: fixed;
+        right: 3%;
+        bottom: 2%;
+        border: 1px solid #000;
+        width: 60px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        font-weight: bold;
+        background-color: #000;
+    }
+
+    .box {
+        width: 400px;
+        background: rgba(0, 0, 0, 0.4);
+        padding: 40px;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 5%;
+        color: white;
+        font-family: 'Century Gothic', sans-serif;
+        border-radius: 15px;
+    }
+
+    .box-img {
+        border-radius: 50%;
+        width: 200px;
+        height: 200px;
+    }
+
+    .box h1 {
+        font-size: 40px;
+        letter-spacing: 4px; /* 자간 넓히기 */
+        font-weight: 100; /* 글자 두께 */
+    }
+    .box h5 {
+        font-size: 20px;
+        letter-spacing: 3px;
+        font-weight: 100;
+    }
+
+    .box p {
+        text-align: justify; /* justify로 기존 가운데 정렬에 양 끝 열 맟춤까지 줌 */
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    .box li {
+        display: inline-block; /* li를 한 줄로 정렬 함 */
+        margin: 6px;
+        list-style: none;
+    }
+    .box li a {
+        color: white;
+        text-decoration: none;
+        font-size: 60px;
+        transition: all ease-in-out 250ms;
+    }
+    .box li a:hover {
+        color: #b9b9b9;
+    }
+
+    table tr {
+        height: 40px;
+    }
+
+
+    .textAlignRight {
+        text-align: right;
+    }
+    .textAlignLeft {
+        text-align: left;
+    }
+    .paddingLeft {
+        padding-left: 30px;
+    }
+</style>
+</head>
+<body>
+    <div class="box">
+        <img src="images/profile_img/playingPiano.jpg" alt="" class="box-img">
+        <h1>Kang Han Gyul</h1>
+        <h5>Web Developer</h5>
+        <table>
+            <!--  프로필 내용 -->
+            <tr>
+                <td class="textAlignRight" width="100px">Phone</td>
+                <td class="paddingLeft textAlignLeft">+82 10-9515-6607</td>
+            </tr>
+            <tr>
+                <td class="textAlignRight">E-mail</td>
+                <td class="paddingLeft textAlignLeft">gang6607@gmail.com</td>
+            </tr>
+            <tr>
+                <td class="textAlignRight">Hobby</td>
+                <td class="paddingLeft textAlignLeft">Playing the piano</td>
+            </tr>
+            <tr>
+                <td class="textAlignRight">Training</td>
+                <td class="paddingLeft textAlignLeft">ITWILL : Spring framework base <br> Java Developer course</td>
+            </tr>
+            <tr>
+                <td class="textAlignRight">University</td>
+                <td class="paddingLeft textAlignLeft">Mokwon Uni.</td>
+            </tr>
+            <tr>
+                <td class="textAlignRight">Bachelor's degree</td>
+                <td class="paddingLeft textAlignLeft">Piano</td>
+            </tr>
+        </table> 
+        <br>     
+        <ul>
+            <li><a href="https://www.facebook.com/profile.php?id=100010832859438" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
+            <li><a href="https://github.com/HanGyulKang" target="_blank"><i class="fab fa-github-square"></i></a></li>
+            <li><a href="https://www.google.com" target="_blank"><i class="fab fa-google-plus-square"></i></a></li>
+        </ul>
+    </div>
+
+    <a id="homebtn" href="main.html">HOME</a>
+</body>
+</body>
+</html>

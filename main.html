@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link : font-awesome 아이콘 링크 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+    <title>피아노 치는 개발자의 블로그</title>
+    <script>
+        $(document).ready(() => {
+            $('#myCalendar').load("calendar.html");
+        }); 
+
+    </script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            box-sizing: border-box;
+            font-family: 'KBIZHanmaumGothic'; 
+        }
+
+        @font-face {
+            font-family: 'KBIZHanmaumGothic'; 
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/KBIZHanmaumGothic.woff')format('woff'); 
+            font-weight: normal; 
+            font-style: normal; 
+        }
+
+        #navbar-left {
+            border: 1px solid rgba(0,0,0,0.7);
+            height: 969px;
+            min-height: 980px;
+            width: 350px;
+            background-color: rgba(0,0,0,0.7);
+        }
+        #profileImg {
+            display: block;
+            width: 230px;
+            margin: 0 auto;
+            border: 3px solid beige;
+            border-radius: 50%;
+        }
+        #myCalendar {
+            margin-left: 23px;
+        }
+        #profileTable {
+            background-color: beige;
+            opacity: 0.6;
+            border-radius: 5px;
+            width: 320px;
+            margin: 0 auto;
+        }
+        #profileTable tr td {
+            font-size: 14px;
+
+        }
+        .profileContent {
+            width: 260px;
+            line-height: 40px;
+            text-align: left;
+            padding-left: 10px;
+        }
+        .fas, .fab, .far {
+            font-size: 20px;
+        }
+        #contentList li a{
+            color: #fff;
+        }
+        #contentList li {
+            margin: 10px 0;
+            width: 150px;
+            height: 30px;
+            margin: 0 auto;
+            list-style-type: none;
+        }
+
+        .heightNone {
+            height: 0px;
+        }        
+
+    </style>
+</head>
+<body>
+    <div id="navbar-left" style="float: left;">
+        <br>
+        <img id="profileImg" src="images/profile_img/playingPiano.jpg" alt="">
+        <br>
+        <div>
+            <table id="profileTable">
+                <tr>
+                    <td style="text-align: center; font-size: 17px;">피아노 치는 개발자 강 한결입니다.</td>
+                </tr>
+            </table>
+            <br>
+            <h2 style="text-align: center; height: 50px; color: #fff; text-decoration: underline;">Contents</h2>
+            <ul id="contentList" style="text-align: center;">
+                <li><a href="home.html" target="iframe" id="openPortfolio">Home</a></li>
+                <li><a href="portfolio.html" target="iframe" id="openPortfolio">Portfolio</a></li>
+                <li><a href="guest.html" target="iframe" id="openGuest">Guest</a></li>
+            </ul>
+            <br>
+            <table id="profileTable">
+                    <td><i class="fas fa-mobile-alt"></i></td>
+                    <td class="profileContent">+82 10 9515 6607</td>
+                </tr>
+                <tr>
+                    <td><i class="far fa-envelope"></i></td>
+                    <td class="profileContent">gang6607@gmail.com</td>
+                </tr>
+                <tr>
+                    <td><i class="fab fa-github-square"></i></td>
+                    <td class="profileContent"><a href="https://github.com/HanGyulKang" style="color: black;">https://github.com/HanGyulKang</a></td>
+                </tr>
+            </table> 
+        </div>
+        <br>
+            <div id="myCalendar"></div>
+        <br>
+    </div>
+
+    <div style="border: 1px solid black; height: 965px; width: 1500px;
+        position: absolute; left: 355px;">
+        <iframe id="mainPage" width="1500" height="965"  name="iframe" src="home.html" frameborder="0" allowfullscreen></iframe>
+    </iframe>
+    </div>
+
+    <!-- <div id="footer" style="position: relative; bottom: -910px; height: 60px;
+        border: 1px solid #fff; color: gray; background-color:#fff; width: 1500px; left: 355px;">
+        <div style="width: 1000px; margin: 0 auto; line-height: 60px;">
+            <div style="float: left;"><i class="far fa-envelope"></i> gang6607@gmail.com</div>   
+            <div style="float: right;"><i class="fab fa-github-square"></i> https://github.com/HanGyulKang</div>
+        </div>
+    </div> -->
+</body>
+</html>
