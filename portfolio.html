@@ -18,34 +18,56 @@
         font-weight: normal; 
         font-style: normal; 
     }
+    /* profile table setting */
+    .table-profile {
+        margin: 0 auto;
+        margin-top: 10px;
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+    .table-profile td {
+        border: 0px solid #fff;
+        text-align: center;
+    }
 
-    .table {
+    #IDphoto {
+        width: 159px;
+    }
+
+    .table-profile-title {
+        height: 50px; 
+        background-color: lightgray;
+        border-spacing: 0;
+    }
+
+    /* project table setting */
+    .table-project {
         margin: 0 auto;
         margin-top: 40px;
         border-spacing: 0;
     }
 
-    td {
+    .table-project td {
         cursor: pointer;
         text-align: center;
         height: 40px;
         border-bottom: 1px solid black;
     }
 
-    td>span {
+    .table-project td>span {
         margin-left: 70px;
     }
 
-    td:nth-child(2) {
+    .table-project td:nth-child(2) {
         text-align: left;
         width: 600px;
     }
 
-    tr>th:nth-child(1) {
-        width: 100px;
+    .table-project tr>th:nth-child(1) {
+        width: 140px;
     }
 
-    tr>th {
+    .table-project tr>th {
         text-align: center;
         background-color: lightgray;
         height: 50px;
@@ -88,9 +110,48 @@
 
 </head>
 <body>
+    <div class="introduceSelf">
+        <br>
+        <h2 style="text-align: center;">Profile</h4>
+        <table class="table-profile">
+            <tr>
+                <td style="border-bottom: 1px solid #000;" rowspan="4"><img id="IDphoto" src="images/profile_img/resumeImg.jpg"></td>
+                <td style="background-color: lightgray; width: 120px; border-bottom: 1px solid #000;">대학교</td>
+                <td style="width: 420px; border-bottom: 1px solid #000;">목원대학교 음악대학</td>
+            </tr>
+            <tr>
+                <td style="background-color: lightgray; border-bottom: 1px solid #000;">학과/전공</td>
+                <td style="border-bottom: 1px solid #000;">건반악학부 피아노과/피아노 전공</td>
+            </tr>
+            <tr>
+                <td style="background-color: lightgray; border-bottom: 1px solid #000;">취미/특기</td>
+                <td style="border-bottom: 1px solid #000;">피아노 연주 및 음악감상</td>
+            </tr>
+            <tr>
+                <td style="background-color: lightgray; border-bottom: 1px solid #000;">희망근무지역</td>
+                <td style="border-bottom: 1px solid #000;">서울특별시 전체</td>
+            </tr>
+            <tr class="table-profile-title">
+                <td style="width: 60px;">연수기관</td>
+                <td>연수기간</td>
+                <td>연수 과정 및 내용</td>
+            </tr>
+            <tr>
+                <td style="border-bottom: 1px solid #000; height: 90px;">ITWILL<br><font size="2">(국가기간전략직종산업)</font></td>
+                <td style="border-bottom: 1px solid #000;"><font size="2">2019.08.20 ~ 2020.02.21<br>(124일/992시간)</font> </td>
+                <td style="border-bottom: 1px solid #000; text-align: left; padding-left:10px;">
+                    <font size="2"><b>과정명</b> : 빅데이터 분석 및 스프링 프레임워크 기반 자바(JAVA) 개발자 양성과정
+                    <br><br>
+                    <b>내용</b> : 일반 기업에서 사용되고 있는 JAVA, JSP(MVC Model-1/2), IBATIS,<br> MYBATIS, Spring 등의 기업 실무 기반 기술을 이해하고 습득하였습니다.</font>
+                </td>
+            </tr>
+        </table>
+    </div>
 
+    <br>
+    <br>
     <div class="container">
-        <table class="table table-hover">
+        <table class="table-project">
             <thead>
                 <tr>
                     <th>번호</th>
