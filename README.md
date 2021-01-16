@@ -26,7 +26,3 @@ Kang Han Gyul : private board<br>
 >복잡한 library 설치 또한 pom.xml에 dependency를 추가하여 간단하게 끝내는 것에서 Spring의 기능에 감동할 수 있었던 프로젝트입니다.<br>
 >특히나 위 프로젝트에서는 생각만 했었던 'DB에 저장되는 사용자 비밀번호 암호화'와 '비밀번호 찾기 결과를 사용자<br> 
 >E-mail로 보내기' 기능을구현해보는 것이 너무 재밌었습니다.
-
-
-
-
